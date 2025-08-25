@@ -3,41 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>HRVAC Demo Website</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- 💡 NOTE: Change the title above for each business -->
 </head>
-
-<div class="centered-box">
-    <div class="textbox">
-            <h1>HRVAC Website</h1>
-
-    <div>
-        <a href="index.html">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="services.html">Services</a> 
-        <a href="contact.html">Contact</a> 
-        <a href="reviews.html">Reviews</a>
-    </div>
-
-    </div>
-</div>
-
 <body>
-    <div class="index-container">
-        <h2>Welcome to HRVAC</h2>
-    <p>Your trusted partner for heating, ventilation, and air conditioning services.</p>
-    <img src="img\placeholder.jpg" alt="HRVAC Services">
-    <p>At HRVAC, we pride ourselves on delivering top-notch HVAC solutions tailored to your needs. Whether it's installation, maintenance, or repair, our team of experts is here to ensure your comfort all year round.</p>
-    <h3>Why Choose Us?</h3>
-    <ul>
-        <li>Experienced Professionals</li>
-        <li>24/7 Emergency Services</li>
-        <li>Affordable Pricing</li>
-        <li>Customer Satisfaction Guaranteed</li>
-    </ul>
-    <p>Contact us today to schedule a consultation or service appointment!</p>
-
-    </div>
+    
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="container">
+            <h1 class="logo">HRVAC</h1>
+            <!-- 💡 NOTE: Replace "HRVAC" with the business name or logo -->
+            
+            <nav>
+                <ul class="nav-links">
+                    <!-- 💡 NOTE: Update links as needed -->
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <!-- 💡 NOTE: Change background image in CSS -->
+        <div class="hero-text">
+            <h2>Welcome to HRVAC</h2>
+            <p>Your trusted partner for heating, ventilation, and air conditioning services.</p>
+            <a href="contact.html" class="btn">Get a Quote</a>
+            <!-- 💡 NOTE: Button text & link can be changed -->
+        </div>
+    </section>
+    
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about container">
+        <h2>About Us</h2>
+        <p>
+            At HRVAC, we pride ourselves on delivering top-notch HVAC solutions tailored to your needs. 
+            Whether it's installation, maintenance, or repair, our team of experts is here to ensure 
+            your comfort all year round.
+        </p>
+    </section>
+    
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="features container">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <!-- 💡 NOTE: Replace features with business highlights -->
+            <li>✅ Experienced Professionals</li>
+            <li>✅ 24/7 Emergency Services</li>
+            <li>✅ Affordable Pricing</li>
+            <li>✅ Customer Satisfaction Guaranteed</li>
+        </ul>
+    </section>
+    
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="cta">
+        <h2>Ready to get started?</h2>
+        <p>Contact us today to schedule a consultation or service appointment!</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+    
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container footer">
+            <p>&copy; 2024 HRVAC. All rights reserved.</p>
+            <!-- 💡 NOTE: Update company name & year -->
+        </div>
+    </footer>
 
 </body>
 </html>

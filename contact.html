@@ -3,33 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HRVAC Demo Website</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Contact</title>
+    <!-- 💡 NOTE: Change the title above for each business -->
 </head>
-<div class="centered-box">
-    <div class="textbox">
-            <h1>Contact</h1>
-
-    <div>
-        <a href="index.html">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="services.html">Services</a> 
-        <a href="contact.html">Contact</a> 
-        <a href="reviews.html">Reviews</a>
-    </div>
-
-    </div>
-</div>
-
 <body>
-    <h2>Contact HRVAC</h2>
-    <p>We would love to hear from you! Whether you have questions about our services, need a quote, or want to schedule an appointment, our team is here to assist you.</p>
-    <img src="img\placeholder.jpg" alt="Contact HRVAC">
-    <h3>Get in Touch</h3>
-    <p>You can reach us through the following methods:</p>
-    <ul>
-        <li><strong>Phone:</strong> (123) 456-7890</li>
-        <li><strong>Email:</strong> HRVACContact@gmail.com</li>
     
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="container">
+            <h1 class="logo">HRVAC</h1>
+            <!-- 💡 NOTE: Replace "HRVAC" with the business name or logo -->
+            
+            <nav>
+                <ul class="nav-links">
+                    <!-- 💡 NOTE: Update links as needed -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <!-- 💡 NOTE: Change background image in CSS -->
+        <div class="hero-text">
+            <h2>Contact HRVAC</h2>
+            <p>We would love to hear from you! Reach out for quotes, appointments, or questions.</p>
+        </div>
+    </section>
+    
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="about container">
+        <h2>Get in Touch</h2>
+        <p>
+            You can reach us through the following methods:
+        </p>
+        <ul>
+            <li><strong>Phone:</strong> (123) 456-7890</li>
+            <li><strong>Email:</strong> HRVACContact@gmail.com</li>
+        </ul>
+        <img src="img/placeholder.jpg" alt="Contact HRVAC" style="max-width:300px; border-radius:8px; margin-top:20px;">
+    </section>
+    
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="cta">
+        <h2>Ready to get started?</h2>
+        <p>Contact us today to schedule a consultation or service appointment!</p>
+        <a href="mailto:HRVACContact@gmail.com" class="btn">Email Us</a>
+    </section>
+    
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container footer">
+            <p>&copy; 2024 HRVAC. All rights reserved.</p>
+            <!-- 💡 NOTE: Update company name & year -->
+        </div>
+    </footer>
+
 </body>
 </html>

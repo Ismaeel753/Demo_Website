@@ -1,55 +1,146 @@
-.centered-box {
+/* ================= GLOBAL STYLES ================= */
+
+/* 💡 Fonts: You can change to 'Roboto', 'Montserrat', etc. */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color: #f9f9f9; /* Light neutral background */
+}
+
+/* 💡 This makes sure content is centered and doesn't stretch too wide */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Buttons (reusable class) */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #0077cc; /* 💡 Main brand color */
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #005fa3; /* Darker shade on hover */
+}
+
+/* ================= HEADER ================= */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    transition: color 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffe659; /* 💡 Accent color */
+}
+
+header .container {
+    display: flex;
     align-items: center;
-    margin-top: 30px;
-}
-
-.textbox {
-    background: #ffe659;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 60%;           
-    min-width: 300px;     
-    max-width: 700px;  
-}
-
-/* This is one type of page design (About page) */
-.about-container {
-    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 40px;
 }
 
-.about-content {
-    flex: 1;
-    margin-right: 30px;
+/* ================= HERO SECTION ================= */
+.hero {
+    background: url('../img/placeholder.jpg') center/cover no-repeat;
+    /* 💡 Change image path above for each business */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero-text {
+    background: rgba(0, 0, 0, 0.6); /* Overlay for readability */
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.hero h2 {
+    font-size: 36px;
+}
+.hero p {
+    margin: 15px 0;
 }
 
-.about-image img {
-    width: 500px;      
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* ================= ABOUT & FEATURES ================= */
+section {
+    padding: 60px 20px;
 }
-
-/* This is another type of page design (Index/Home page) */
-.index-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
+.about, .features {
     text-align: center;
 }
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+.features li {
+    margin: 10px 0;
+    font-size: 18px;
+}
 
-.index-container img {
-    max-width: 350px; /* Adjust as needed */
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* ================= CALL TO ACTION ================= */
+.cta {
+    background: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero h2 {
+        font-size: 28px;
+    }
+    .hero-text {
+        padding: 20px;
+    }
 }

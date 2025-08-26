@@ -110,6 +110,26 @@ section {
     margin: 10px 0;
     font-size: 18px;
 }
+.feature-list {
+  list-style: none;      /* removes the default bullet points */
+  padding: 0;
+  margin: 0 auto;        /* keeps list centered in container */
+  max-width: 600px;      /* keeps it neat, optional */
+}
+
+.feature-list li {
+  display: flex;         /* puts emoji + text side by side */
+  align-items: center;
+  justify-content: flex-start; /* emoji stays left, text follows */
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.feature-list .icon {
+  width: 50px;           /* fixed width so emojis line up */
+  text-align: center;    /* center emoji inside that space */
+  margin-right: 10px;
+}
 
 /* ================= CALL TO ACTION ================= */
 .cta {

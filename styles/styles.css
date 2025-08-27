@@ -115,6 +115,8 @@ section {
   padding: 0;
   margin: 0 auto;        /* keeps list centered in container */
   max-width: 600px;      /* keeps it neat, optional */
+  position: relative;
+  left: 120px;   /* <-- nudges entire block right (adjust px as needed) */
 }
 
 .feature-list li {
@@ -126,7 +128,7 @@ section {
 }
 
 .feature-list .icon {
-  width: 50px;           /* fixed width so emojis line up */
+  width: 40px;           /* fixed width so emojis line up */
   text-align: center;    /* center emoji inside that space */
   margin-right: 10px;
 }

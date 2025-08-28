@@ -53,6 +53,11 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+.logo img {
+    height: 50px;      /* adjust size */
+    width: auto;       /* keeps proportions */
+    display: block;    /* removes extra spacing */
+}
 
 nav ul {
     list-style: none;
@@ -90,9 +95,13 @@ header .container {
 }
 .hero h2 {
     font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 .hero p {
     margin: 15px 0;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 /* ================= ABOUT & FEATURES ================= */
@@ -110,27 +119,48 @@ section {
     margin: 10px 0;
     font-size: 18px;
 }
+/* Shared style for all feature lists */
 .feature-list {
-  list-style: none;      /* removes the default bullet points */
+  list-style: none;
   padding: 0;
-  margin: 0 auto;        /* keeps list centered in container */
-  max-width: 600px;      /* keeps it neat, optional */
-  position: relative;
-  left: 120px;   /* <-- nudges entire block right (adjust px as needed) */
+  margin: 0 auto;
+  max-width: 600px;
 }
 
+/* Normal features */
 .feature-list li {
-  display: flex;         /* puts emoji + text side by side */
+  display: flex;
   align-items: center;
-  justify-content: flex-start; /* emoji stays left, text follows */
   margin: 10px 0;
   font-size: 1.2rem;
 }
 
 .feature-list .icon {
-  width: 40px;           /* fixed width so emojis line up */
-  text-align: center;    /* center emoji inside that space */
+  width: 40px;      /* 80px for testimonials */
+  text-align: center;
   margin-right: 10px;
+}
+
+/* ✅ Nudge feature sections slightly right (desktop only) */
+@media (min-width: 768px) {
+  .feature-list {
+    position: relative;
+    left: 20px;   /* adjust until it looks perfect */
+  }
+}
+
+/* ✅ Special case: Testimonials */
+.testimonials .feature-list {
+  left: 10px;  /* less shift for stars */
+}
+
+/* ✅ On small screens (phones), keep it perfectly centered */
+@media (max-width: 767px) {
+  .feature-list {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ================= CALL TO ACTION ================= */
